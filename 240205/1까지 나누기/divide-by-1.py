@@ -9,5 +9,6 @@ for i in range(1, n+1):
     n = x
     
     if x == 0:
-        print(cnt)
         break;
+
+print(cnt)
