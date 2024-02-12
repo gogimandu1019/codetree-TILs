@@ -2,7 +2,7 @@ n , m = map(int, input().split())
 
 lst1 = [list(map(int,input().split())) for i in range(n)]
 lst2 = [list(map(int,input().split())) for i in range(n)]
-lst_answer = [[0 for i in range(n)] for i in range(m)]
+lst_answer = [[0 for i in range(m)] for i in range(n)]
 
 for i in range(n):
     for j in range(m):
