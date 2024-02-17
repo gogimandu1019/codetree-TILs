@@ -5,4 +5,4 @@ for i in range (0,len(x)):
     else:
         x[i] = x[i].upper()
 
-print(x)
+print(''.join(x))
