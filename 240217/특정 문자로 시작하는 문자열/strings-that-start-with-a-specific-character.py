@@ -26,7 +26,7 @@ if str4.startswith(cond):
     lensum = lensum + len(str4)
 
 if cnt != 0:
-    average = lensum / cnt
+    average = round(lensum / cnt, 2)
 else:
     average = 0
     
