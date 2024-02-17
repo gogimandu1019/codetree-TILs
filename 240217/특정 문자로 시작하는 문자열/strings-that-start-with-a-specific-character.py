@@ -1,29 +1,19 @@
 n = int(input())
-str1 = input()
-str2 = input()
-str3 = input()
-str4 = input()
-cond = input()
-
+arr = []
 cnt = 0
 lensum = 0
 average = 0
 
-if str1.startswith(cond):
-    cnt = cnt + 1
-    lensum = lensum + len(str1)
+for i in range(n):
+    inptstring = input()
+    arr.append(inptstring)
 
-if str2.startswith(cond):
-    cnt = cnt + 1
-    lensum = lensum + len(str2)
+cond = input()
 
-if str3.startswith(cond):
-    cnt = cnt + 1
-    lensum = lensum + len(str3)
-
-if str4.startswith(cond):
-    cnt = cnt + 1
-    lensum = lensum + len(str4)
+for i in range(0, n):
+    if arr[i][0] == cond:
+        cnt += 1
+        lensum += len(arr[i])
 
 if cnt != 0:
     average = round(lensum / cnt, 2)
