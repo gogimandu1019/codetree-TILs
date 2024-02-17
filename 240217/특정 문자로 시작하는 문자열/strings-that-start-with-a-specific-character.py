@@ -7,6 +7,7 @@ cond = input()
 
 cnt = 0
 lensum = 0
+average = 0
 
 if str1.startswith(cond):
     cnt = cnt + 1
@@ -23,6 +24,11 @@ if str3.startswith(cond):
 if str4.startswith(cond):
     cnt = cnt + 1
     lensum = lensum + len(str4)
+
+if cnt != 0:
+    average = lensum / cnt
+else:
+    average = 0
     
 
-print(f'{cnt} {lensum/cnt :.2f}')
+print(f'{cnt} {average :.2f}')
