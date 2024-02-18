@@ -17,4 +17,4 @@ for i in range(len(str2)):
         continue;
 
 
-print(x+y)
+print(int(x) + int(y))
