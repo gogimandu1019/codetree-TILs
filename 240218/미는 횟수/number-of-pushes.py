@@ -5,7 +5,7 @@ x = len(A)
 cnt = 0
 
 for i in range(x):
-    A = A[1:] + A[0]
+    A = A[-1] + A[0:x-1]
     cnt += 1
 
     if A == B:
