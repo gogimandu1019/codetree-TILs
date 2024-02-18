@@ -3,18 +3,18 @@ str2 = list(input())
 x = ""
 y = ""
 
-for i in range(len(str1)):
-    if str.isdigit(str1[i]) == True:
-        x = x + ''.join(str1[i])
-    else :
-        continue;
 
+def getNumber(string):
+    answer = ""
+    for i in range(len(string)):
+        if str.isdigit(string[i]) == True:
+            answer = answer + ''.join(string[i])
+        else :
+            continue;
+    return answer
 
-for i in range(len(str2)):
-    if str.isdigit(str2[i]) == True:
-        y = y + ''.join(str2[i])
-    else :
-        continue;
+x = getNumber(str1)
+y = getNumber(str2)
 
 
 print(int(x) + int(y))
