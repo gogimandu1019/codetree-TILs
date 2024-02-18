@@ -11,3 +11,6 @@ for i in range(x):
     if A == B:
         print(cnt)
         break;
+    else:
+        if i == x-1:
+            print(-1)
