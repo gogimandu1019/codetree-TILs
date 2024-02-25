@@ -1,7 +1,7 @@
 n, m = map(int, input().split())
 
 
-def maxi(x, y):
+def mini(x, y):
     i = 1
     k = 0
     for _ in range(1, min(x,y) + 1):
@@ -14,14 +14,7 @@ def maxi(x, y):
         if i > min(x,y):
             break;
 
-    return k
-
-def mini (x, y, z):
-    i = int(x / z)
-    j = int(y / z)
-    return i * j * z
+    return ((x*y) // k)
 
 
-a = maxi(n, m)
-
-print(mini(n, m, a))
+print(mini(n,m))
