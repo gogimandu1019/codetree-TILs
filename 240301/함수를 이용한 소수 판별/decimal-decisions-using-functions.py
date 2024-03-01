@@ -10,7 +10,8 @@ def is_prime(n):
 
 
 for i in range(a, b+1):
-    if is_prime(i):
-        summ += i
+    if i != 1:
+        if is_prime(i):
+            summ += i
 
 print(summ)
