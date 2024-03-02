@@ -5,7 +5,7 @@ def chkPerfect(x):
     if x % 2 == 0: #2로나누어떨어짐
         return 0
     else:
-        if x % 5 == 0 and x % 10 != 0: #일의자리 5 : 5로는 떨어지고 10으론 안떨어짐
+        if x % 10 == 5:
             return 0
         else:
             if x % 3 == 0 and x % 9 != 0:   #3으로 나누어 떨어지는데 9로는 나누어떨어지지 않음
