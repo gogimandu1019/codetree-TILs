@@ -2,19 +2,31 @@ n1, n2 = map(int, input().split())
 A = list(map(int, input().split()))
 B = list(map(int, input().split()))
 
-
-for i in range(n1):
-    if A[i] == B[0]:
-        for j in range(1, n2):
-            if A[i] == B[j]:
+def chkContinuePart(x,y,Z,Q):
+    flag = False
+    for i in range(y):
+        if Z[i] == Q[0]:
+            for j in range(1, y):
+                if Z[i] == Q[j]:
+                    i += 1
+                    flag = True
+                    continue;
+                else:
+                    flag = False
+                    break;
+        else:
+            if i < x:
                 i += 1
-                print("Yes")
                 continue;
             else:
-                print("No")
+                flag = False
                 break;
+    
+    if flag == False:
+        print("No")
+    elif flag == True:
+        print("Yes")
 
-    else:
-        if i < n1:
-            i += 1
-            continue;
+
+
+chkContinuePart(n1,n2,A,B)
