@@ -5,7 +5,7 @@ B = list(map(int, input().split()))
 def chkContinuePart(x,y,Z,Q):
     flag = False
 
-    for i in range(y):
+    for i in range(x):
         if x < y:
             flag = False
             break;
