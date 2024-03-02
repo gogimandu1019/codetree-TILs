@@ -11,14 +11,11 @@ def chkContinuePart(x,y,Z,Q):
             break;
         else:
             if Z[i] == Q[0]:
-                for j in range(1, y):
+                for j in range(0, y):
                     if Z[i] == Q[j]:
-                        i += 1
                         flag = True
-                        continue;
                     else:
-                        flag = False
-                        break;
+                        i += 1
             else:
                 if i < x:
                     i += 1
