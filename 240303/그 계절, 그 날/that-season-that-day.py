@@ -3,12 +3,16 @@ Y,M,D = map(int, input().split())
 def chkLeapYear(k):
     leapyn = True
     if k % 4 == 0:
-        leapyn = True
+        if k % 100 == 0:
+            if k % 400 == 0:
+                leapyn = True
+            else:
+                leapyn = False
+        else:
+            leapyn = True
     else:
         leapyn = False    
 
-    if k % 100 == 0 and k % 400 != 0:
-        leapyn = False
     return leapyn
 
 def chkExistDate(x, y, z):
