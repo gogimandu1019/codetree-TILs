@@ -27,16 +27,24 @@ def chkExistDate(x, y, z):
             if chkLeapYear(x) == True:
                 if z > 30:
                     result = False
+                else:
+                    result = True
             else:
                 if z > 29:
-                    result = False                
+                    result = False
+                else:
+                    result = True                
     
     if y == 1 or y == 3 or y == 5 or y == 7 or y == 8 or y == 10 or y == 12:
         if z < 1 or z > 31:
             result = False
+        else :
+            result = True
     elif y == 4 or y == 6 or y == 9 or y == 11:
         if z < 1 or z > 30:
             result = False
+        else:
+            result = True
     
     return result
 
@@ -55,5 +63,6 @@ def chkSeason(x,y,z):
             print(-1)
     else:
         print(-1)
+
 
 chkSeason(Y,M,D)
