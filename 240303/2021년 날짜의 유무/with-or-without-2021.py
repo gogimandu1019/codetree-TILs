@@ -9,7 +9,7 @@ def chkExistDate2021(x, y):
     if y < 1 or y > 31:
         result = False
     
-    if x == 2 and y > 29: #2월은 28일까지
+    if x == 2 and y >= 29: #2월은 28일까지
         result = False
     
     if x == 1 or x == 3 or x == 5 or x == 7 or x == 8 or x == 10 or x == 12:
