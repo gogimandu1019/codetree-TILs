@@ -1,20 +1,17 @@
 A = list(input())
-ascii = [0] * 26
 
-#ord('a')=97, ord('z')=122
-def asciiChk(X):
-    result = False
-    for char in X:
-        ascii[ord(char) - 97] += 1
-        if ascii[ord(char) - 97] == 2:
-            result = True
-            return result
-            break;
+def havingMoreTwo(X):
+    if len(X) == 1:
+        return False
+
+    for i in range(len(X)):
+        if X[i] != X[0]:
+            return True
     
-    return result
+    return False
 
 
-if asciiChk(A):
+if havingMoreTwo(A):
     print("Yes")
 else:
     print("No")
