@@ -7,6 +7,7 @@ def chkIdx():
         if X[i:i+len(Y)] == Y:
             flag = True
             print(i)
+            break;
     if flag == False:
         print(-1)
 
