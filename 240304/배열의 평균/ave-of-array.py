@@ -7,7 +7,7 @@ for i in range(2):
         summ += arr[i][j]
         if j == 3:
             avg = summ / 4
-            print(avg, end = " ")
+            print(f'{avg:.1f}', end = " ")
 
 print()
 
@@ -18,7 +18,7 @@ for j in range(4):
         summ += arr[i][j]
         if i == 1:
             avg = summ / 2
-            print(avg, end = " ")
+            print(f'{avg:.1f}', end = " ")
 
 print()
 
@@ -28,4 +28,4 @@ for i in range(2):
     for j in range(4):
         summ += arr[i][j]
 avg = summ / 8
-print(avg)
+print(f'{avg:.1f}')
