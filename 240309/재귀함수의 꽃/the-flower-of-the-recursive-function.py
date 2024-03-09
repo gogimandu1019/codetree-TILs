@@ -1,23 +1,10 @@
 N = int(input())
 
-def recursive_print_down(x):
+def recursive_print(x):
     if x == 0:
         return
     print(x, end = ' ')
-    recursive_print_down(x-1)
+    recursive_print(x-1)
+    print(x, end = ' ')
 
-def recursive_print_up(x):
-    if x == 0:
-        return
-    
-    recursive_print_up(x-1)
-    
-    if x == N:
-        print(x)
-    else:
-        print(x, end = ' ')
-
-
-
-recursive_print_down(N)
-recursive_print_up(N)
+recursive_print(N)
