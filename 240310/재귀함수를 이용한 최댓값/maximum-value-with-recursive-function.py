@@ -1,20 +1,16 @@
-import sys
 n = int(input())
 arr = list(map(int, input().split()))
-arr.append(-sys.maxsize)
 
 def findMax(x):
+    maxi = 0
     if x == 1 :
-        if arr[0] > arr[1]:
-            return arr[0]
-        else:
-            return arr[1]
+        return arr[0]
 
-
-    if findMax(x-1) > arr[x]:
-        return findMax(x-1)
+    cache = int(findMax(x-1))
+    if cache > arr[x-1]:
+        return cache
     else:
-        return arr[x]
+        return arr[x-1]
     
 
 print(findMax(n))
