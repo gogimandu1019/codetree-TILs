@@ -12,4 +12,4 @@ def f(x):
     
     return y
 
-f(N)
+print(f(N))
