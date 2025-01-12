@@ -1,11 +1,15 @@
 N = int(input())
 
 # Write your code here!
-def re(N, a=2, b=4, i=3):
-    while (i > 2):
-        if i==N:
-            return (a*b)%100
+def sequence(n):
+    x = 0
+    if n == 1:
+        x = 2
+    elif n == 2:
+        x= 4
+    else:
+        x= (sequence(n-1) * sequence(n-2)) % 100
+    
+    return x
 
-        return re(N, b, (a*b)%100, i+1)
-
-print(re(N))
+print(sequence(N))
