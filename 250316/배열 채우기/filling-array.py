@@ -1,10 +1,10 @@
 arr = list(map(int, input().split()))
 n = len(arr)
+arr2 = []
 for i in range(n):
     if arr[i] == 0:
-        arr.pop()
+        break;
+    arr2.append(arr[i])
 
-arr = arr[::-1]
-n = len(arr)
-for i in range(n):
-    print(arr[i], end = " ")
+for j in arr2[::-1]:
+    print(j, end = " ")
